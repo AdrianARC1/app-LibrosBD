@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/custom/custom.css' />
+  </head>
+  <body>
+    <style>
+      #prin2{
+        height: 90vh;
+      }
+    </style>
+    <%- include('partials/header.ejs') %> 
+    <div id="prin2" class="bg-purple-400 flex flex-col items-center justify-center text-center">
+      <div class="h-96 flex flex-col w-[66%] justify-around">
+        <h1 class="text-4xl">Bienvenido a la mejor pagina de libros de la historia moderna.</h1>
+        <p class="text-3xl text-justify">¿Preparado para indagar entre cientos de libros realmente interesantes los cuales te pueden cambiar la vida de tal manera que lleguen a resolvertela en un abrir y cerrar de ojos?¿Cansado de haber leído tremenda pregunta? Yo también, dale al boton para ir a la seccion de libros.</p>
+        <div class="flex items-center justify-center mt-9">
+          <button class="p-4 bg-white rounded-xl w-40"><a href="/books">Ir a libros</a></button>
+        </div>
+        <p class="text-3xl text-center mt-9">Ooooooooooooooooooooooo... Si quieres crear un libro directamente, apreta al botón de abajo.</p>
+        <div class="flex items-center justify-center">
+          <button class="p-4 bg-white rounded-xl w-60 mt-9"><a href="/add">Crear un libro</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

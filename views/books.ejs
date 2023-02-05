@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %> 
+
+  <body>
+    <div class="flex flex-wrap w-full justify-around bg-purple-400">
+    <% libros.forEach(function (libro) { %> 
+        <div class="w-[33%] 
+        h-[90vh] border-solid border-2 border-black mt-4 flex flex-col items-center justify-around rounded-xl">
+          <p><strong>Titulo:</strong>: <%= libro.title %> </p>
+          <p><strong>Autor:</strong> <%= libro.autor %> </p>
+          <img src="<%= libro.imagen %>" class="h-96 w-80"></img>
+          <p class="w-80 text-justify"><strong>Descripcion: </strong><%= libro.descrip %> </p>
+        </div>
+    <% }) %>
+    </div>
+
+
+  </body>
+</html>

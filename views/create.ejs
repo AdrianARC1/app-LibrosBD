@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/custom/custom.css' />
+  </head>
+  <body>
+    <div class="h-screen">
+      <%- include('partials/header.ejs') %> 
+      <div class="flex flex-col items-center justify-center text-center bg-purple-400 h-[90vh]">
+        <form action="/books" method="POST" class="flex flex-col justify-around h-5/6 w-96">
+          <div class="flex justify-between">
+            <p class="text-3xl">Titulo:</p>
+            <input class="p-3 rounded-xl outline-none" type="text" name="title" placeholder="Introduce un titulo">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl">Autor:</p>
+            <input class="p-3 rounded-xl outline-none" type="text" name="autor" placeholder="Introduce un autor">
+          </div>
+          <div class="flex justify-between">
+            <p class="text-3xl">Imagen:</p>
+            <input class="p-3 rounded-xl outline-none" type="text" name="imagen" placeholder="Introduce una url de una imagen">
+          </div>
+
+          <p class="text-3xl">Descripcion:</p>
+          <textarea name="descrip" placeholder="Introduce una url de una imagen" class="resize-none h-52"></textarea>
+          <button type="submit" class="p-4 bg-white rounded-xl">Crear libro</button>
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
