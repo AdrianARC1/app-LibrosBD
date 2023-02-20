@@ -38,10 +38,7 @@ router.post('/add', async function(req, res, next) {
     res.status(400).send("No te dejes nada vacío")
   }else{
     await pool.query("INSERT INTO libros SET ?", {
-      title,
-      autor,
-      imagen,
-      descrip
+      title, autor, imagen, descrip
     })
     res.redirect("/add")
   }
